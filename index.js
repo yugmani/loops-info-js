@@ -1,3 +1,6 @@
+// The “while” loop
+// **************************************
+
 // While the condition is truthy, the code from the loop body is executed.
 
 // example 1
@@ -21,3 +24,14 @@ while (j) {
 
 let k = 3;
 while (k) console.log('k: ', k--);
+
+// The “do…while” loop
+// **************************************
+
+// The loop will first execute the body, then check the condition, and, while it’s truthy, execute it again and again.
+// the body of the loop gets executed at least once regardless of the condition being truthy.
+let p = 100;
+do {
+  console.log(p);
+  p += 100;
+} while (p < 300);
