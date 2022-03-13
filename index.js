@@ -3,7 +3,7 @@
 
 // example 1
 let i = 5;
-while (i <= 10) {
+while (i <= 7) {
   // as long as the value of i is less than 3, loop keeps run.
   console.log(i);
   i++;
@@ -43,14 +43,33 @@ do {
 //   // ... loop body ...
 // }
 
-// example 1
+// example 1: Generating natural numbers
 for (let i = 0; i < 3; i++) {
   // shows 0, then 1, then 2
   console.log(i);
 }
 
-// example 2
-for (let i = 0; i < 10; i += 2) {
+// example 2: Generating even numbers
+for (let i = 0; i < 6; i += 2) {
   // shows 0, then 1, then 2
   console.log('Even: ', i);
+}
+
+// example 3: Generating odd numbers in reverse oreder
+for (let i = 5; i > 0; i -= 2) {
+  // shows 0, then 1, then 2
+  console.log('Odd: ', i);
+}
+
+// example 4: Breaking the loop
+let x = 0;
+// without the begin part because it is already declared above this line
+for (; x < 3; x++) {
+  console.log(x);
+}
+
+//example 5: Without begin and steps parts
+let y = 0;
+for (; y < 3; ) {
+  console.log(y++);
 }
