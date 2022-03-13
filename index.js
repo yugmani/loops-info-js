@@ -121,6 +121,20 @@ for (let i = 0; i < 5; ++i) {
 //Repeat until the input is correct
 let value;
 do {
-  value = +prompt('Enter a number: ', ' ');
+  // value = +prompt('Enter a number: ', 0);
   console.log(value);
-} while (value || value < 100);
+} while (value < 100 && value);
+
+//Output prime numbers
+// const num = +prompt("Enter a number: ", 0)
+const num = 10;
+const prime = [2];
+for (let i = 3; i < num; i++) {
+  for (let j = 3; j <= i; j++) {
+    if (i % j !== 0) {
+      prime.push(i);
+    }  
+  }  
+}
+
+console.log(prime);
