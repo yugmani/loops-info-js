@@ -61,15 +61,33 @@ for (let i = 5; i > 0; i -= 2) {
   console.log('Odd: ', i);
 }
 
-// example 4: Breaking the loop
+// example 4
 let x = 0;
 // without the begin part because it is already declared above this line
 for (; x < 3; x++) {
-  console.log(x);
+  console.log('x: ', x);
 }
 
 //example 5: Without begin and steps parts
 let y = 0;
 for (; y < 3; ) {
-  console.log(y++);
+  console.log('y: ', y++);
 }
+
+// example 6:remove everything, to create an infinite loop:
+// for(;;){
+// // without limits
+// }
+
+//Breaking the loop
+// *******************************************
+
+let sum = 0;
+while (true) {
+  let value = +prompt('Enter a number', '');
+  if (!value) break; //to break the loop
+
+  sum += value;
+}
+
+console.log('Sum: ' + sum);
