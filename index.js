@@ -1,8 +1,6 @@
 // The “while” loop
 // **************************************
 
-// While the condition is truthy, the code from the loop body is executed.
-
 // example 1
 let i = 5;
 while (i <= 10) {
@@ -10,8 +8,6 @@ while (i <= 10) {
   console.log(i);
   i++;
 }
-
-// A single execution of the loop body is called an iteration. The loop in the example above makes three iterations.
 
 // example 2
 let j = 3;
@@ -28,10 +24,33 @@ while (k) console.log('k: ', k--);
 // The “do…while” loop
 // **************************************
 
-// The loop will first execute the body, then check the condition, and, while it’s truthy, execute it again and again.
-// the body of the loop gets executed at least once regardless of the condition being truthy.
+// syntax:
+//  do {
+// loop body
+// } while (condition);
+
 let p = 100;
 do {
   console.log(p);
   p += 100;
-} while (p < 300);
+} while (p <= 300);
+
+// The “for” loop
+// *******************************************
+
+// syntax:
+// for (begin; condition; step) {
+//   // ... loop body ...
+// }
+
+// example 1
+for (let i = 0; i < 3; i++) {
+  // shows 0, then 1, then 2
+  console.log(i);
+}
+
+// example 2
+for (let i = 0; i < 10; i += 2) {
+  // shows 0, then 1, then 2
+  console.log('Even: ', i);
+}

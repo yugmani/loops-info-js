@@ -4,7 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Loops</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Loops</h1>
+      <div class="loop">
+        <h2>The “while” loop</h2>
+        <ul>
+          <li>
+            While the condition is truthy, the code from the loop body is
+            executed.
+          </li>
+          <li>
+            // A single execution of the loop body is called an iteration. The
+            loop in the example above makes three iterations.
+          </li>
+        </ul>
+      </div>
+      <div class="loop">
+        <h2>The “do…while” loop</h2>
+        <ul>
+          <li>
+            The loop will first execute the body, then check the condition, and,
+            while it’s truthy, execute it again and again.
+          </li>
+          <li>
+            the body of the loop gets executed at least once regardless of the
+            condition being truthy.
+          </li>
+        </ul>
+      </div>
+
+      <div class="loop">
+        <h2>The “for” loop</h2>
+        <h4>Let’s examine the for statement part-by-part:</h4>
+        <ul>
+          <li>
+            <p>Part : begin</p>
+            <p><strong>let i = 0</strong></p>
+            <p><em>Executes once upon entering the loop.</em></p>
+          </li>
+          <li>
+            <p>Part : condition</p>
+            <p><strong>i < 3</strong></p>
+            <p>
+              <em
+                >Checked before every loop iteration. If false, the loop
+                stops.</em
+              >
+            </p>
+          </li>
+          <li>
+            <p>Part : body</p>
+            <p><strong>alert(i)</strong></p>
+            <p><em>Runs again and again while the condition is truthy.</em></p>
+          </li>
+          <li>
+            <p>Part : step</p>
+            <p><strong>i++</strong></p>
+            <p><em>Executes after the body on each iteration.</em></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
