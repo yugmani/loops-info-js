@@ -96,5 +96,13 @@ console.log('Sum: ' + sum);
 // Continue to the next iteration
 for (let r = 0; r < 5; r++) {
   //if true, skip the remaining part of the body and do the next iteration
-  console.log(r);
+  if (r % 2 === 0) continue;
+  console.log(r); // logs 1, 3 but not 2;
 }
+
+// 1,2,3,4
+// 0,1,2,3,4, 5
+let m = 0;
+while (++m < 5) console.log('m: ' + m);
+let n = 0;
+while (n++ < 5) console.log('n: ' + n);
