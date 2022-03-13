@@ -83,11 +83,18 @@ for (; y < 3; ) {
 // *******************************************
 
 let sum = 0;
-while (true) {
-  let value = +prompt('Enter a number', '');
-  if (!value) break; //to break the loop
+// while (true) {
+// uncomment line below to see the result
+// let value = +prompt('Enter a number', '');
+// if (!value) break; //to break the loop
 
-  sum += value;
-}
+// sum += value;
+// }
 
 console.log('Sum: ' + sum);
+
+// Continue to the next iteration
+for (let r = 0; r < 5; r++) {
+  //if true, skip the remaining part of the body and do the next iteration
+  console.log(r);
+}
