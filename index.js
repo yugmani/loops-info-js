@@ -100,9 +100,27 @@ for (let r = 0; r < 5; r++) {
   console.log(r); // logs 1, 3 but not 2;
 }
 
-// 1,2,3,4
-// 0,1,2,3,4, 5
+// Which values does the while loop show?
+// ++i vs i++ (prefix vs postfix)
 let m = 0;
-while (++m < 5) console.log('m: ' + m);
+while (++m < 5) console.log('m: ' + m); // 1,2,3,4
 let n = 0;
-while (n++ < 5) console.log('n: ' + n);
+while (n++ < 5) console.log('n: ' + n); // 1,2,3,4,5
+
+//++i vs i++ (prefix vs postfix) in for loop
+//Prefix
+for (let i = 0; i < 5; i++) {
+  console.log('Prefix: ', i); // 0,1,2,3,4
+}
+
+//Postfix
+for (let i = 0; i < 5; ++i) {
+  console.log('postfix: ', i); // 0,1,2,3,4
+}
+
+//Repeat until the input is correct
+let value;
+do {
+  value = +prompt('Enter a number: ', ' ');
+  console.log(value);
+} while (value || value < 100);
