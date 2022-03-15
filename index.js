@@ -126,15 +126,33 @@ do {
 } while (value < 100 && value);
 
 //Output prime numbers
-// const num = +prompt("Enter a number: ", 0)
-const num = 10;
-const prime = [2];
-for (let i = 3; i < num; i++) {
-  for (let j = 3; j <= i; j++) {
-    if (i % j !== 0) {
-      prime.push(i);
-    }  
-  }  
+// const inputNum = +prompt('Enter a number: ', 0);
+const inputNum = 10;
+const prime = [];
+const composite = [];
+
+const primeCheck = (num) => {
+  // let message = `${num} is a prime number`;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      // message = `${num} is not a prime number`;
+      return;
+    }
+  }
+
+  return num;
+};
+
+for (let j = 1; j <= inputNum; j++) {
+  let primeNum = primeCheck(j);
+  if (j === 1) {
+    composite.push(j);
+  } else if (primeNum) {
+    prime.push(primeNum);
+  } else {
+    composite.push(j);
+  }
 }
 
 console.log(prime);
+console.log(composite);
